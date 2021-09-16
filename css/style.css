@@ -47,11 +47,26 @@
   background-attachment: fixed;
   background-size: cover;
   text-align: center;
-  padding: 10%;
+  padding: 18%;
   
 }
 
 #home h1{
   color: chocolate;
   font-weight: 600;
+  font-family: 'crimson pro', serif;
+}
+
+#about{
+  padding: 10%;
+   padding-right: 20%;
+   padding-left: 20%;
+    text-align: center;
+}
+ h3{
+
+  font-family: 'crimson pro', serif;
+}
+#about p{
+ font-family: Roboto,sans-serif;
 }
