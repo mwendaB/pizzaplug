@@ -1,12 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Nanum+Myeongjo&display=swap');
-*{
-    box-sizing: border-box;
-  }
 
-body{
-  padding: 0;
-  margin: 0;
-}
 .bar{
   position: fixed;
     top: 0;
@@ -44,4 +37,21 @@ body{
 }
 .navbar-links li:hover{
   background-color: #555;
+}
+
+/* style home */
+#home{
+  background-image: url("/pizzaimgs/11.jpeg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  text-align: center;
+  padding: 10%;
+  
+}
+
+#home h1{
+  color: chocolate;
+  font-weight: 600;
 }
