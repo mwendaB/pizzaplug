@@ -84,7 +84,15 @@
   text-align: center;
   padding-bottom: 10%;
 }
+#pizzaTopping {
+  display: flex;
+  align-items: column;
+}
 
+#pizzaSize {
+  display: flex;
+  align-items: column;
+}
 
 #contact{
    background-image: url("/pizzaimgs/back3.jpeg");
@@ -120,3 +128,5 @@ footer{
   padding-top: 30px;
   font-family: 'Delius Swash Caps', cursive;
 }
+
+
