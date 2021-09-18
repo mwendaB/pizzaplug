@@ -68,66 +68,112 @@
         </div>
      </div>
        
-       <div id="order">
 
-         <h3 class="ord">Order Here</h3>
-         
-         <div class="jumbotron" id="orders">
-            <form class="center" id="text-center">
-            <div>
-              <label>pizza Flavor</label><br>
-              <select class="flavors" id="flavor" required><br>
-                <option label="chicken alfredo pizza" value="800">Chicken Alfredo Pizza</option>
-                <option label="Taco Quesadila Pizza" value="1200">Taco Quesadila Pizza</option>
-                <option label="Mushrooms" value="350">Mushrooms</option>
-                <option label="Macaroni And Cheese Pizza" value="700">Macaroni And Cheese Pizza</option>
-                <option label="Beef pizza" value="500">Beef pizza</option>
-                <option label="Sausage pizza" value="650">Sausage pizza</option>
-              </select>
+     <div class="container-fluid order" id="make-order">
+        <div class="order-overlay">
+          <div class="controls-top text-center" id="Order-now"> 
+            <h2>Order Here</h2>
+          </div>
+          <h2>Order your pizza here and we will deliver it to you at your door step!</h2>
+          <div class="row">
+              <div class="col-sm-5">
+                <form action="">
+                    <label for="select">Select Your Flavor</label>
+                    <div class="section">
+                    <select class="browser-default custom-select custom-select-md mb-3 name">
+                      <!-- <option selected value="choose">Choose your flavor</option> -->
+                      <option value="Chicken Tikka">Chicken Tikka</option>
+                      <option value="PeriPeri Pizza">PeriPeri Pizza</option>
+                      <option value="Raspberry Dessert Pizza">Raspberry Dessert Pizza</option>
+                      <option value="Chicken Alfredo Pizza">Chicken Alfredo Pizza</option>
+                      <option value="Sunchoke Pizza">Sunchoke Pizza</option>
+                      <option value="Buffalo Chicken Sticks">Buffalo Chicken Sticks</option>
+                    </select>
+                     </div>
+
+                  <label for="select">Select Size</label>
+                  <div class="section">
+                  <select class="browser-default custom-select custom-select-md mb-3" id="size">
+                    <option selected value="0">Select size here</option>
+                    <option value="large">Large -- sh. 1200</option>
+                    <option value="medium">Medium -- sh. 850</option>
+                    <option value="small">Small -- sh. 600</option>
+                  </select>
+                  </div>
+                  <label for="crust">Choose your favorite Crust!</label>
+                  <div class="section">
+                    <select class="browser-default custom-select custom-select-md mb-3" id="crust">
+                        <option selected value="0">Select your preferred crust!</option>
+                      <option value="Crispy">Crispy -- sh. 200</option>
+                      <option value="Stuffed">Stuffed -- sh. 150</option>
+                      <option value="Gluten-free">Gluten-free-- sh. 180</option>
+                    </select>
+                    </div>
+                  <label for="Toppings">Select Your Toppings at sh. 50 each</label><br>
+                    <div class="inline">
+                      <input type="checkbox" class="input1" id="Sausage" value="Sausage" name="toppings">
+                      <label class="custom-control-label" for="Sausage">Sausage</label>
+                    </div>
+                    <div class="inline">
+                      <input type="checkbox" class="input1" id="Bacon" value="Bacon" name="toppings">
+                      <label class="custom-control-label" for="Bacon">Bacon</label>
+                    </div>
+                    <div class="inline">
+                      <input type="checkbox" class="input1" id="Mushrooms" value="Mushrooms" name="toppings">
+                      <label class="custom-control-label" for="Mushrooms">Mushrooms</label>
+                    </div>
+                    <br><br>
+                  <button type="submit" class="btn btn-orange proceed">Proceed</button>
+                  
+                </form>
               </div>
-
-              <div>
-              <label>pizza Size</label><br>
-              <select class="sizes" id="size" required><br>
-          <option label="Regular" value="300">Regular</option>
-          <option label="Medium" value="600">Medium</option>
-          <option label="Large" value="1200">Large</option>
-        </select>
+              <div class="col-sm-7">
+                <div class="choise">
+                  <h2>Your Order is:</h2>
+                  <div id="your-orders">
+                    <table class="table table-sm  pizzatable">
+                      <thead>
+                        <tr>
+                          <th scope="col">Name</th>
+                          <th scope="col">Size</th>
+                          <th scope="col">Crust</th>
+                          <th scope="col">Topping</th>
+                          <th scope="col">Total</th>
+                        </tr>
+                      </thead>
+                      <tbody id="ordersmade">
+                        <tr>
+                          <td id="pizzaname"></td>
+                          <td id="pizzasize"></td>
+                          <td id="pizzacrust"></td>
+                          <td id="pizzatopping"></td>
+                          <td id="totals"></td>
+                        </tr>                  
+                      </tbody>
+                    </table>
+                    <p id="pizzatotal"></p>
+                    <p id="totalbill"></p> 
+                    <p id="addedprice">Delivery will cost sh. 150</p>
+                    <p id="finallmessage"></p>
+                  </div>
+                  <button class="btn btn-orange addPizza">Add Pizza</button>
+                  <button class="btn btn-orange" id="checkout">Checkout</button>
+                  <button class="btn btn-orange deliver">Home delivery?</button>
+                </div>
+                <div class="delivery">
+                    <form action="">
+                      <div class="form-group">
+                        <input type="text" id="name" class="form-control mb-3" placeholder="Name">
+                        <input type="number" id="phone" class="form-control mb-3" placeholder="Pnone Number">
+                        <input type="text" id="location" class="form-control mb-3" placeholder="Location for delivery">
+                        <button class="btn btn-orange" id="final-order">Place Order</button>
+                      </div>
+                    </form>
+                </div>
+              </div>
+          </div>
         </div>
-
-        <div>
-        <label>pizza Crust</label><br>
-        <select class="crust" id="crust" required><br>
-          <option label="Thin Crust" value="150">Thin Crust</option>
-          <option label="Thick Crust" value="200">Thick Crust</option>
-          <option label="Deep Crust" value="380">Deep Crust</option>
-          <option label="Cheese Filled Crust" value="500">Cheese Filled Crust</option>
-          <option label="Stuffed Crust" value="345">Stuffed Crust</option>
-        </select>
-        </div>
-
-        <label>pizza Topping</label>
-        <div>
-        <select class="toppings" id="topping" required><br>
-          <option label="Pepperoni" value="100">Pepperoni</option>
-          <option label="Mushrooms" value="300">Mushrooms</option>
-          <option label="Onions" value="120">Onions</option>
-          <option label="Sausage" value="124">Sausage</option>
-          <option label="Green peppers" value="80">Green peppers</option>
-        </select>
-        </div>
-
-        <label>Number of pizza</label>
-        <div>
-        <input value="" required placeholder="number of pizza" id="quantity"></input>
-        <div class="button">
-          <button type="submit" id="btn"  label="">submit</button>
-        </div>
-      </form>
-    </div>
-    </div>
-    </div>
-
+      </div>
    
 
 

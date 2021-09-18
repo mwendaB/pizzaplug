@@ -84,39 +84,75 @@
   text-align: center;
   padding-bottom: 10%;
 }
-#order{
-  border-radius: 20px;
-  align-items: center;
+
+form {
+width: 100%;
   text-align: center;
-  border: #333;
-  padding-top: 5%;
-  padding-bottom: 8%;
-  padding-left: 5%;
-
-}
-
-   
-
-form{
-
-
   font-family: 'Lato', sans-serif;
 }
-
-
-.flavors,
-.sizes,
-.crust,
-.toppings{
- 
-    width: 50%;
-    
-    padding: 10px;
-    color: aliceblue solid;
-    font-size: 1rem;
+.order{
+  background-attachment: fixed;
+  background-image: url("/pizzaimgs/pizza3.jpeg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: white;
+  padding-top: 4%;
+  padding-bottom: 4%;
 }
-#quantity{
-  width: 30%;
+.order-overlay{
+  background-color: rgba(0, 0, 0, 0.8);
+  margin-left: 2%;
+  margin-right: 2%;
+  padding-bottom: 20px;
+  padding-left: 6%;
+}
+.choise{
+  display: none;
+  padding-left: 2%;
+  padding-right: 2%;
+}
+.deliver{
+  display: none;
+}
+
+.delivery{
+  display: none;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+td,th{
+  font-size: 20px;
+  color: white;
+}
+.choise h2{
+  color:orange;
+  text-align: left;
+}
+#your-orders{
+  color: white;
+  font-size: 30px;
+}
+#addedprice{
+  display: none;
+}
+#finallmessage{
+  display: none;
+  padding-top: 10%;
+  padding-right: 10%;
+  padding-left: 10%;
+  font-size: 28px;
+}
+#regards{
+  text-align: center;
+  color: aliceblue;
+}
+#information{
+  padding-top: 5%;
+  font-size: 22px;
+  padding-right: 8%;
+  padding-left: 5%;
+  color: #ffa500;
 }
 .button{
   padding: 10px;
@@ -136,6 +172,13 @@ form{
   color: black;
   transition: 0.78s;
 }
+.inline{
+  display: inline;
+}
+.section{
+  width: 100%;
+
+}
 
 #contact{
    background-image: url("/pizzaimgs/back3.jpeg");
@@ -152,6 +195,29 @@ form{
   color: #9f9f9f;
   font-family: 'Sarabun', sans-serif;
   font-weight: 700;
+}
+
+.order-summary h1, .summary, .contact {
+  color: #000;
+  font-family: 'Love Ya Like A Sister', cursive;
+  margin-top: 30px;
+}
+
+button[type=submit], .deliver {
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  display: inline-block;
+  letter-spacing: 2px;
+  background-color: #ffbf00;
+  outline: none;
+  padding: 12.5px 13px;
+  border: none;
+  border-radius: 33px;
+  font-size: 14px;
+}
+.deliver {
+  margin: 10px;
 }
 
 footer{
