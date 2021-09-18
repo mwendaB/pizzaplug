@@ -80,6 +80,10 @@
 .text-center {
   text-align: center!important;
 }
+#menu{
+  text-align: center;
+  padding: 1%;
+}
 #order{
   border-radius: 20px;
   align-items: center;
@@ -94,8 +98,7 @@
 
 form{
 
-  
- 
+
   font-family: 'Lato', sans-serif;
 }
 
@@ -106,7 +109,7 @@ form{
 .toppings{
  
     width: 50%;
-    height: 20px;
+    
     padding: 10px;
     color: aliceblue solid;
     font-size: 1rem;
@@ -118,9 +121,17 @@ form{
   padding: 10px;
 }
 #btn {
-  
+  text-decoration: none;
+  font-size: 1.25rem;
+    width: 100px;
+   
    color: #fff;
-   background-color: #FE5A07 !important;
+   background-color: #FE5A07 ;
    border-radius: 9px;
    padding: 10px;
+}
+#btn:hover{
+  background-color: gree;
+  color: black;
+  transition: 0.78s;
 }
