@@ -84,14 +84,59 @@
   text-align: center;
   padding-bottom: 10%;
 }
-#pizzaTopping {
-  display: flex;
-  align-items: column;
-}
 
-#pizzaSize {
-  display: flex;
-  align-items: column;
+.order h2{
+  text-align: center;
+}
+#variety{
+  padding-top: 30px;
+}
+.order{
+  background-attachment: fixed;
+  background-image: url("/pizzaimgs/back2.jpeg");
+  background-position: center;
+  background-size: cover;
+  object-fit: cover;
+  background-repeat: no-repeat;
+  color: white;
+  padding-top: 4%;
+  padding-bottom: 4%;
+}
+.order-overlay{
+  background-color: rgba(0, 0, 0, 0.8);
+  margin-left: 2%;
+  margin-right: 2%;
+  padding-bottom: 20px;
+  padding-left: 6%;
+}
+.select{
+  width: 100%;
+  height: 20%;
+}
+.choise{
+  display: none;
+  padding-left: 2%;
+  padding-right: 2%;
+}
+.deliver{
+  display: none;
+}
+.delivery{
+  display: none;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+td,th{
+  font-size: 20px;
+  color: white;
+}
+.choise h2{
+  color:orange;
+  text-align: left;
+}
+#your-orders{
+  color: white;
+  font-size: 30px;
 }
 
 #contact{
