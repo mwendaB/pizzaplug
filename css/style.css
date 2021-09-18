@@ -84,3 +84,14 @@
   align-items: center;
  text-align: center;
 }
+.jumbotron{
+   border-radius: 20px;
+}
+
+form{
+  margin-right: -100%;
+  padding-left: 13%;
+  padding-right: 13%;
+  text-align: center;
+  font-family: 'Lato', sans-serif;
+}
