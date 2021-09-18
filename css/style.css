@@ -84,100 +84,106 @@
   text-align: center;
   padding-bottom: 10%;
 }
-
-form {
-width: 100%;
-  text-align: center;
-  font-family: 'Lato', sans-serif;
+#card-display{
+  display:flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
-.order{
-  background-attachment: fixed;
-  background-image: url("/pizzaimgs/pizza3.jpeg");
-  background-position: center;
+.card{
+  width:300px;
+  margin:10px;
+}
+.card-img-top{
+  height:200px;
   background-size: cover;
   background-repeat: no-repeat;
-  color: white;
-  padding-top: 4%;
-  padding-bottom: 4%;
+  background-position: center;
 }
-.order-overlay{
-  background-color: rgba(0, 0, 0, 0.8);
-  margin-left: 2%;
-  margin-right: 2%;
-  padding-bottom: 20px;
-  padding-left: 6%;
+#Big-Mark .card-img-top{
+  background-image: url(../images/pizza/pizza2.jpg)
 }
-.choise{
-  display: none;
-  padding-left: 2%;
-  padding-right: 2%;
+#Cheese-Love .card-img-top{
+  background-image: url(../images/pizza/pizza3.jpg)
 }
-.deliver{
-  display: none;
+#Pepperoni-Craze .card-img-top{
+  background-image: url(../images/pizza/pizza4.jpg)
+}
+#Napoletana .card-img-top{
+  background-image: url(../images/pizza/pizza1.jpg)
+}
+#Diavola .card-img-top{
+  background-image: url(/pizzaimgs/pizza1.jpeg);
+}
+#Frutti-D\'Mare .card-img-top{
+  background-image: url(../images/pizza/pizza6.jpg);
+}
+.price-display,.card-title{
+  display: inline-block;
 }
 
-.delivery{
-  display: none;
-  padding-left: 10%;
-  padding-right: 10%;
+.price-display{
+  float: right;
 }
-td,th{
-  font-size: 20px;
-  color: white;
-}
-.choise h2{
-  color:orange;
-  text-align: left;
-}
-#your-orders{
-  color: white;
-  font-size: 30px;
-}
-#addedprice{
-  display: none;
-}
-#finallmessage{
-  display: none;
-  padding-top: 10%;
-  padding-right: 10%;
-  padding-left: 10%;
-  font-size: 28px;
-}
-#regards{
-  text-align: center;
-  color: aliceblue;
-}
-#information{
-  padding-top: 5%;
-  font-size: 22px;
-  padding-right: 8%;
-  padding-left: 5%;
-  color: #ffa500;
-}
-.button{
-  padding: 10px;
-}
-#btn, .btn {
-  text-decoration: none;
-  font-size: 1.25rem;
-    width: 100px;
-   
-   color: #fff;
-   background-color: #FE5A07 ;
-   border-radius: 9px;
-   padding: 10px;
-}
-#btn:hover{
-  background-color: gree;
-  color: black;
-  transition: 0.78s;
-}
-.inline{
-  display: inline;
-}
-.section{
-  width: 100%;
 
+.card-footer{
+  display: flex;
+  flex-direction: column;
+}
+
+.order-btns{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* <-----Cart styling-----> */
+.cart{
+  position: fixed;
+  left:-10px;
+  top:5%;
+  border-radius:0 10px 10px 0;
+  cursor: pointer;
+}
+.cart button{
+  background-color: #F18C41;
+  border: #F17A29;
+}
+
+/* <------Modal-----> */
+.modal{
+  display:none;
+  position: fixed;
+  z-index:10000;
+  left:0;
+  top:0;
+  width:100%;
+  height:100%;
+  overflow: auto;
+  background-color: rgba(0,0,0);
+  background-color: rgba(0,0,0,.4);
+  padding: 60px;
+}
+.modal-content{
+  background-color: #fefefe;
+  margin:5% auto 15% auto;
+  border:1px solid #888;
+  width:80%;
+}
+.close{
+  position: absolute;
+  right:25px;
+  top:0;
+  color:#000;
+  font-size: 35px;
+  font-weight: bold;
+}
+.close:hover,.close:focus{
+  color:red;
+  cursor: pointer;
+}
+.animate{
+  animation: animatezoom .6s;
 }
 
 #contact{
@@ -197,6 +203,40 @@ td,th{
   font-weight: 700;
 }
 
+#summary{
+  display:flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+}
+#summary div{
+  padding:10px;
+  width:300px;
+  height:250px;
+}
+#summary p {
+  margin:0;
+  font-size: 15px;
+}
+#summary hr{
+  width:80%;
+}
+.hidden{
+   display:none;
+}
+.checkout-btn{
+   display:block;
+   margin: auto;
+   background-color: #F18C41;
+}
+
+/* check out alert  */
+#alert{
+   position: fixed;
+   top:20%;
+   z-index:50;
+   left:0;
+}
 .order-summary h1, .summary, .contact {
   color: #000;
   font-family: 'Love Ya Like A Sister', cursive;
