@@ -153,3 +153,9 @@ form{
   font-family: 'Sarabun', sans-serif;
   font-weight: 700;
 }
+
+footer{
+  text-align: center;
+  padding-top: 30px;
+  font-family: 'Delius Swash Caps', cursive;
+}
