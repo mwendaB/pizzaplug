@@ -114,3 +114,8 @@ form{
    border-radius: 9px;
    padding: 9px;
 }
+#yourorder{
+  text-align: center;
+  display: none;
+  padding-bottom: 5%;
+}
