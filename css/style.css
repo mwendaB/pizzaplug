@@ -119,3 +119,6 @@ form{
   display: none;
   padding-bottom: 5%;
 }
+#deliveryOptions{
+  display: none;
+}
