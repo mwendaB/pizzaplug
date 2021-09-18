@@ -93,24 +93,34 @@
    
 
 form{
-  margin-right: -10%;
+
   
-  text-align: center;
+ 
   font-family: 'Lato', sans-serif;
 }
 
-.form-img{
-  float: right;
-  height: 400px;
-  width: 400px;
-  object-fit: contain;
-  
-}
 
-.btn {
+.flavors,
+.sizes,
+.crust,
+.toppings{
  
+    width: 50%;
+    height: 20px;
+    padding: 10px;
+    color: aliceblue solid;
+    font-size: 1rem;
+}
+#quantity{
+  width: 30%;
+}
+.button{
+  padding: 10px;
+}
+#btn {
+  
    color: #fff;
    background-color: #FE5A07 !important;
    border-radius: 9px;
-   padding: 9px;
+   padding: 10px;
 }
