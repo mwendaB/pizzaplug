@@ -120,7 +120,7 @@ form{
 .button{
   padding: 10px;
 }
-#btn {
+#btn, .btn {
   text-decoration: none;
   font-size: 1.25rem;
     width: 100px;
@@ -134,4 +134,20 @@ form{
   background-color: gree;
   color: black;
   transition: 0.78s;
+}
+
+#contact{
+   background-image: url("/pizzaimgs/back3.jpeg");
+   border-radius: 1%;
+    width: 100%;
+    height: auto;
+    text-align: center;
+    color: white;
+    font-family: 'Lato', sans-serif;
+   
+}
+.form-control::placeholder {
+  color: #9f9f9f;
+  font-family: 'Sarabun', sans-serif;
+  font-weight: 700;
 }
