@@ -226,8 +226,23 @@
                             </tr>
                         </tfoot>
                     </table>
+                    <a href="#ordersection" type="submit" name="addorder" onclick="addOrder()" class="btn  submit" id="addorder">Add Order</a>
+                    <button type="submit" name="checkout" onclick="deliveryOptions()" class="btn" id="checkout">Checkout</button>
+                </div>
+                <div class="col-md-2"></div>
+            </div>
+        </div>
 
-
+        <div id="deliveryOptions">
+            <i class="fa fa-clock-o" style="font-size:100px;color:#FE5A07"></i>
+            <br>
+            <br>
+            <p>Your order will be ready in 30 minutes.</p>
+            <p>Would you like to:</p>
+            <button type="submit" name="pickup" onclick="pickUp()" class="btn"><i class="fas fa-store"></i> Pick it Up</button>
+            <button type="submit" name="deliver" onclick="deliver()" class="btn submit"><i class="fas fa-truck"></i> Get it Delivered</button>
+        </div>
+    </div>
     </div>
    </body>
    </html>
