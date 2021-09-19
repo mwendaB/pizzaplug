@@ -80,7 +80,30 @@
   padding-top: 5%;
 }
 /* order section */
+#make-order{
+  background-image: url("/pizzaimgs/pizza1.jpeg");
+}
+.order{
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: white;
+  padding-top: 4%;
+  padding-bottom: 4%;
+}
 
+#variety{
+  padding-top: 30px;
+}
+.order-overlay{
+  background-color: rgba(0, 0, 0, 0.8);
+  margin-left: 2%;
+  margin-right: 2%;
+  padding-bottom: 20px;
+  padding-left: 6%;
+  border-radius: 10%;
+}
 
 
 
