@@ -57,12 +57,12 @@ function mozarellaCheese() {
   return parseInt(cheese);
 }
 
-function calctotalPrice(e) {
+function calctotalPrice() {
   event.preventDefault();
   var totalPrice = (getSizeCost() + getCrustCost() + mushrooms()) * (getNumber());
   
       console.log(totalPrice);
-  alert("Your order of " + getNumber() + " pizzas has been processed.Your total amount payable is " + totalPrice +"." )
+  alert("Your order of " + getNumber() + " pizza(`s) has been processed.Your total amount payable is " + totalPrice +"." )
 
 };
 
@@ -76,7 +76,7 @@ $(document).ready(function() {
       var number = $("input#number").val();
       var location = $("input#location").val();
 
-      alert("Hello " + name + " "+  number +"  . Your order has been successfuly received and will be delivered to " +  location + " within one hour.The delivery will cost ksh 180/= Thank you for chosing the pizzeria.");
+      alert("Hello " + name + "  . Your order has been successfuly received and will be delivered to " +  location + " within one hour .The delivery will cost ksh 180/= Thank you for chosing us as your plug.");
       
   });
   
