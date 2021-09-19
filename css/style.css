@@ -80,33 +80,6 @@
   padding-top: 5%;
 }
 /* order section */
-#make-order{
-  
-  padding: 2%;
-  border-style: inset;
-  padding-top: 10%;
-}
-#submit{
-  margin: 1%;
-  padding: 0.5rem;
-  border-radius: 10px;
-  background-color:greenyellow;
-  border: none;
-  
-}
-#submit:hover{
-  background-color: #333;
-  color: white;
-  transition: 0.9s;
-}
-#toppingone{
- word-spacing: 2rem;
-}
-h3{
-  color: green;
-  font-size: xx-large;
-  font-weight: bold;
-}
 #contact{
    background-image: url("../pizzaimgs/back3.jpeg");
    border-radius: 1%;
