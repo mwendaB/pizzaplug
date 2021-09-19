@@ -82,6 +82,7 @@
 /* order section */
 #make-order{
   background-image: url("/pizzaimgs/pizza1.jpeg");
+  padding: 5%;
 }
 .order{
   background-attachment: fixed;
