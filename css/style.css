@@ -41,7 +41,7 @@
 
 /* style home */
 #home{
-  background-image: url("/pizzaimgs/11.jpeg");
+  background-image: url("../pizzaimgs/11.jpeg");
   background-position: center center;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -108,7 +108,7 @@ h3{
   font-weight: bold;
 }
 #contact{
-   background-image: url("/pizzaimgs/back3.jpeg");
+   background-image: url("../pizzaimgs/back3.jpeg");
    border-radius: 1%;
     width: 100%;
     height: auto;
