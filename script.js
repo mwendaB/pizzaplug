@@ -29,3 +29,20 @@ function sausages() {
   return parseInt(sausage);
 }
 
+function onions() {
+  var onion = 0;
+  var addonions = document.getElementById("toppingone");
+  if (addonions.checked === true) {
+      onion = 130;
+  }
+  return parseInt(onion);
+}
+
+function tikkaSaucee() {
+  var tikkaSauce = 0;
+  var addtikkaSauce = document.getElementById("toppingone");
+  if (addtikkaSauce.checked === true) {
+      tikkaSauce = 120;
+  }
+  return parseInt(tikkaSauce);
+}
