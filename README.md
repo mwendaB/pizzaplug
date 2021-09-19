@@ -4,7 +4,7 @@
 Brian mwenda
 
 ## Description
-PIzza plug is a  PIzza online shop wherer yu can order and get
+PIzza plug is a  PIzza online shop wherer yu can order and order pizza the price will be displayed and it will be delivered
 
 ## Setup/Installation Requirements
  Inorder to acces the project in your local files, you can clone it in these simple steps:
