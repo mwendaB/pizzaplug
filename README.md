@@ -30,7 +30,7 @@ you can contact me on my email; brianmwenda255@gmail.com
 ### Live Site
 [sketch](https://www.figma.com/file/q9CmRSMGjomXMbJsePzl3L/Untitled?node-id=2%3A2)
 
-[LIVE LINK]()
+[LIVE LINK](https://mwendab.github.io/pizzaplug/)
 
 ### Licence
 This project is under the  [MIT](LICENCE) licence:<br>
