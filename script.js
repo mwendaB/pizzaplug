@@ -12,7 +12,7 @@ function Getpizza( name,size,crust,topping, total ){
 
 $(document).ready(function(){
   $("button.order").click(function(event){
-   let pname = $(".name option:selected").val();
+   let name1 = $(".name option:selected").val();
    let size1 = $("#size option:selected").val();
    let crust1 = $("#crust option:selected").val();
    let topping1 = [];
@@ -82,7 +82,7 @@ $(document).ready(function(){
     $("#totals").html(total);
 
     $("button.addPizza").click(function(){
-      let pname = $(".name option:selected").val();
+      let name1 = $(".name option:selected").val();
       let size1 = $("#size option:selected").val();
       let crust1 = $("#crust option:selected").val();
       let topping1 = [];
@@ -132,3 +132,20 @@ $(document).ready(function(){
         checkoutTotal = checkoutTotal + total;
         console.log(checkoutTotal);
 
+        var newOrder = new Getpizza(name1, size1, crust1,topping1,total);
+
+        $("#ordersmade").append('<tr><td id="pizzaname">'+newOrder.name +'</td><td id="pizzasize">' + newOrder.size + '</td><td id="pizzacrust">'+newOrder.crust + '</td><td id="pizzatopping">'+newOrder.topping+'</td><td id="totals">'+newOrder.total+'</td></tr>');
+        console.log(newOrder);
+        
+    
+      });
+
+
+      $("#checkout").click(function(){ 
+        $("#checkout").hide();
+        $(".addPizza").hide();
+        $(".deliver").slideDown(1000);
+        $("#addedprice").slideDown(1000);
+        console.log("Your total bills is sh. "+checkoutTotal);
+        $("#pizzatotal").append("Your bill is sh. "+checkoutTotal);
+      });
