@@ -80,7 +80,7 @@ $(document).ready(function(){
     $("#pizzacrust").html($("#crust option:selected").val());
     $("#pizzatopping").html(topping1.join(", "));
     $("#totals").html(total);
-  });
+  
 
 
     $(".addPizza").click(function(){
@@ -194,4 +194,4 @@ $(document).ready(function(){
       });
     event.preventDefault();
   });
-  
+});
