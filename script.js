@@ -81,7 +81,7 @@ $(document).ready(function(){
     $("#pizzatopping").html(topping1.join(", "));
     $("#totals").html(total);
   });
-});
+
 $(document).ready(function(){
     $("button.addPizza").click(function(){
       let name1 = $(".name option:selected").val();
@@ -180,3 +180,20 @@ $(document).ready(function(){
         let person = $("#name").val();
         let phone = $("#phone").val();
         let location = $("#location").val();
+
+        if ($("input#name").val() && $("input#phone").val() && $("input#location").val()!=""){
+  
+          $("#finallmessage").append(person+", Pizza Plug has recieved your order and it will be delivered to you at "+location+ ". you are required to pay sh. "+deliceryamount);
+          $("#totalbill").hide();
+          $("#finallmessage").slideDown(1500);
+        }
+        else {
+          alert("Please fill in the details for delivery!");
+          $(".delivery").show();
+          $("button#final-order").show();
+        }
+      });
+    });
+
+    event.preventDefault();
+  });
