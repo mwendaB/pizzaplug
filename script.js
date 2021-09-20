@@ -143,7 +143,7 @@ $(document).ready(function(){
       });
   
   
-    $(document).ready(function(){
+    
       $("#checkout").click(function(){ 
         $("#checkout").hide();
         $(".addPizza").hide();
@@ -165,10 +165,9 @@ $(document).ready(function(){
         $("#totalbill").append("Total amount is: "+deliceryamount);
       });
   
-    });
   
 
-    $(document).ready(function(){
+    
       $("#final-order").click(function(event){
         event.preventDefault();
   
@@ -193,7 +192,5 @@ $(document).ready(function(){
           $("button#final-order").show();
         }
       });
-    });
-
     event.preventDefault();
   });
