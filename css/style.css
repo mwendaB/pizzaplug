@@ -81,10 +81,7 @@
 }
 /* order section */
 #make-order{
-  background-image: url("/pizzaimgs/pizza1.jpeg");
-  padding: 5%;
-}
-.order{
+  background-image: url("../pizzaimgs/pizza1.jpeg");
   background-attachment: fixed;
   background-position: center;
   background-size: cover;
@@ -92,7 +89,9 @@
   color: white;
   padding-top: 4%;
   padding-bottom: 4%;
+  padding: 5%;
 }
+
 
 
 .order-overlay{
