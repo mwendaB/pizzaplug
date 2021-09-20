@@ -94,16 +94,13 @@
   padding-bottom: 4%;
 }
 
-#variety{
-  padding-top: 30px;
-}
+
 .order-overlay{
   background-color: rgba(0, 0, 0, 0.8);
-  margin-left: 2%;
-  margin-right: 2%;
+  
   padding-bottom: 20px;
   padding-left: 6%;
-  border-radius: 10%;
+  border-radius: 5%;
 }
 .deliver{
   display: none;
@@ -159,8 +156,6 @@ td,th{
    
    
 }
-
-
 
 footer{
   text-align: center;
