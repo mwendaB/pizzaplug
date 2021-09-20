@@ -144,21 +144,21 @@ $(document).ready(function(){
       $("#checkout").click(function(){ 
         $("#checkout").hide();
         $(".addPizza").hide();
-        $(".deliver").slideDown(1000);
-        $("#addedprice").slideDown(1000);
-        console.log("Your total bills is sh. "+checkoutTotal);
-        $("#pizzatotal").append("Your bill is sh. "+checkoutTotal);
+        $(".deliver").slideDown(1100);
+        $("#addedprice").slideDown(1100);
+        console.log("Your total bills is sh."+checkoutTotal);
+        $("#pizzatotal").append("Your bill is sh."+checkoutTotal);
       });
 
       $(".deliver").click(function(){
         $(".pizzatable").hide();
         $(".choise h2").hide();
-        $(".delivery").slideDown(1000);
+        $(".delivery").slideDown(1100);
         $("#addedprice").hide();
         $("button.deliver").hide();
         $("#pizzatotal").hide();
         let deliceryamount= checkoutTotal+150;
-        console.log("You will pay sh. "+deliceryamount+" on delivery");
+        console.log("You will pay sh."+deliceryamount+" on delivery");
         $("#totalbill").append("Total amount is: "+deliceryamount);
       });
   
