@@ -67,7 +67,7 @@ $(document).ready(function(){
     else{
       $("button.order").hide();
       $("#information").hide();
-      $("div.choise").slideDown(1000);
+      $("div.choise").toggle(1100);
     }
 
     total = price + crust_price + topping_value;
@@ -147,8 +147,8 @@ $(document).ready(function(){
       $("#checkout").click(function(){ 
         $("#checkout").hide();
         $(".addPizza").hide();
-        $(".deliver").slideDown(1100);
-        $("#addedprice").slideDown(1100);
+        $(".deliver").toggle(1100);
+        $("#addedprice").toggle(1100);
         console.log("Your total bills is sh."+checkoutTotal);
         $("#pizzatotal").append("Your bill is sh."+checkoutTotal);
       });
@@ -156,7 +156,7 @@ $(document).ready(function(){
       $(".deliver").click(function(){
         $(".pizzatable").hide();
         $(".choise h2").hide();
-        $(".delivery").slideDown(1100);
+        $(".delivery").toggle(1100);
         $("#addedprice").hide();
         $("button.deliver").hide();
         $("#pizzatotal").hide();
@@ -180,11 +180,11 @@ $(document).ready(function(){
         let phone = $("#phone").val();
         let location = $("#location").val();
 
-        if ($("input#name").val() && $("input#phone").val() && $("input#location").val()!=""){
+        if ($("#name").val() && $("#phone").val() && $("#location").val()!=""){
   
           $("#finallmessage").append(person+", Pizza Plug has recieved your order and it will be delivered to you at "+location+ ". you are required to pay sh. "+deliceryamount);
           $("#totalbill").hide();
-          $("#finallmessage").slideDown(1500);
+          $("#finallmessage").toggle(1500);
         }
         else {
           alert("Please fill in the details for delivery!");
