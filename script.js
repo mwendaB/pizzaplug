@@ -74,13 +74,15 @@ $(document).ready(function(){
     console.log(total);
     let checkoutTotal =0;
     checkoutTotal = checkoutTotal + total;
-
+    
     $("#pizzaname").html($(".name option:selected").val());
     $("#pizzasize").html( $("#size option:selected").val());
     $("#pizzacrust").html($("#crust option:selected").val());
     $("#pizzatopping").html(topping1.join(", "));
     $("#totals").html(total);
-
+  });
+});
+$(document).ready(function(){
     $("button.addPizza").click(function(){
       let name1 = $(".name option:selected").val();
       let size1 = $("#size option:selected").val();
@@ -139,8 +141,9 @@ $(document).ready(function(){
         
     
       });
-
-
+    });
+  
+    $(document).ready(function(){
       $("#checkout").click(function(){ 
         $("#checkout").hide();
         $(".addPizza").hide();
@@ -162,3 +165,18 @@ $(document).ready(function(){
         $("#totalbill").append("Total amount is: "+deliceryamount);
       });
   
+    });
+  
+
+    $(document).ready(function(){
+      $("#final-order").click(function(event){
+        event.preventDefault();
+  
+        $("#pizzatotal").hide();
+        $(".delivery").hide();
+        $("#final-order").hide();
+        let deliceryamount= checkoutTotal+150;
+        console.log("Final Bill is: "+deliceryamount);
+        let person = $("#name").val();
+        let phone = $("#phone").val();
+        let location = $("#location").val();
