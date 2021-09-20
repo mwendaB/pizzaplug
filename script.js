@@ -82,8 +82,8 @@ $(document).ready(function(){
     $("#totals").html(total);
   });
 
-$(document).ready(function(){
-    $("button.addPizza").click(function(){
+
+    $(".addPizza").click(function(){
       let name1 = $(".name option:selected").val();
       let size1 = $("#size option:selected").val();
       let crust1 = $("#crust option:selected").val();
@@ -141,7 +141,7 @@ $(document).ready(function(){
         
     
       });
-    });
+  
   
     $(document).ready(function(){
       $("#checkout").click(function(){ 
